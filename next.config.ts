@@ -21,11 +21,17 @@ const nextConfig: NextConfig = {
           key: "X-Frame-Options",
           value: "DENY",
         },
+        // Novo header para CSP
+        {
+          key: "Content-Security-Policy",
+          value:
+            "default-src 'self'; img-src 'self' data: https://*.supabase.co; script-src 'self' 'unsafe-inline'",
+        },
       ],
     },
   ],
 
-  // Imagens
+  // Otimização de Imagens (Ajustado)
   images: {
     remotePatterns: [
       {
@@ -34,21 +40,42 @@ const nextConfig: NextConfig = {
       },
     ],
     minimumCacheTTL: 86400,
+    formats: ["image/avif", "image/webp"],
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // Transpilação
+  // Transpilação (Ajustado)
   transpilePackages: [
     "@supabase/auth-helpers-nextjs",
     "@testing-library/react",
+    "@heroicons/react", // Adicione se estiver usando
   ],
 
-  // Experimental
+  // Experimental (Ajustado)
   experimental: {
     serverActions: {
       bodySizeLimit: "2mb",
-      allowedOrigins: [process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000"],
+      allowedOrigins: [
+        process.env.NEXT_PUBLIC_SITE_URL || "localhost:3000",
+        "*.vercel.app",
+      ],
     },
-    optimizePackageImports: ["@supabase/supabase-js"],
+    optimizePackageImports: [
+      "@supabase/supabase-js",
+      "@heroicons/react/24/outline",
+    ],
+    // Novas configurações
+    typedRoutes: true, // Habilita rotas tipadas
+    optimizeServerReact: true, // Otimiza React no server
+  },
+
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      use: ["@svgr/webpack"],
+    });
+    return config;
   },
 };
 

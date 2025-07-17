@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { SupabaseProvider } from "@/lib/supabase-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
+import { Logo } from "@/components/Logo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +52,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <header className="bg-white shadow-sm">
+              <div className="max-w-7xl mx-auto py-4 px-6">
+                <Logo />
+              </div>
+            </header>
             {children}
           </ThemeProvider>
         </SupabaseProvider>
