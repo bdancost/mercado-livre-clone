@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Header com Logo */}
-      <header className="absolute top-0 w-full py-4 px-6">
+      <header className="absolute top-0 w-full py-4 px-6 bg-white/80 backdrop-blur-sm shadow-md z-10">
         <Logo />
       </header>
 
