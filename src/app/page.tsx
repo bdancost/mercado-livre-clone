@@ -2,6 +2,7 @@
 import { useAuth } from "@/hooks/useAuth";
 import { useRouter } from "next/navigation";
 import { Logo } from "@/components/Logo";
+import type { Route } from "next";
 
 export default function Home() {
   const { user } = useAuth();
@@ -45,7 +46,7 @@ export default function Home() {
           <div className="mt-12">
             {user ? (
               <button
-                onClick={() => router.push("/produtos")}
+                onClick={() => router.push("/produtos" as Route)}
                 className="px-8 py-4 bg-indigo-600 text-white text-lg font-medium rounded-lg shadow-lg hover:bg-indigo-700 transition-all transform hover:scale-105"
               >
                 Explorar Produtos Exclusivos →
@@ -53,13 +54,19 @@ export default function Home() {
             ) : (
               <div className="space-y-4 sm:space-y-0 sm:space-x-4">
                 <button
-                  onClick={() => router.push("/cadastro")}
+                  onClick={() => router.push("/login" as Route)}
+                  className="px-8 py-4 bg-white text-indigo-600 border-2 border-indigo-600 text-lg font-medium rounded-lg shadow-lg hover:bg-indigo-50 transition-all"
+                >
+                  Fazer Login
+                </button>
+                <button
+                  onClick={() => router.push("/cadastro" as Route)}
                   className="px-8 py-4 bg-indigo-600 text-white text-lg font-medium rounded-lg shadow-lg hover:bg-indigo-700 transition-all"
                 >
                   Criar Conta Gratuita
                 </button>
                 <button
-                  onClick={() => router.push("/produtos")}
+                  onClick={() => router.push("/produtos" as Route)}
                   className="px-8 py-4 bg-white text-indigo-600 border-2 border-indigo-600 text-lg font-medium rounded-lg shadow-lg hover:bg-indigo-50 transition-all"
                 >
                   Ver Catálogo
