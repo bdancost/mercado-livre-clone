@@ -52,8 +52,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <header className="bg-white shadow-sm">
-              <div className="max-w-7xl mx-auto py-4 px-6">
+            <header className="sticky top-0 w-full py-4 px-6 bg-white/80 backdrop-blur-sm shadow-md z-10">
+              <div className="max-w-7xl mx-auto">
                 <Logo />
               </div>
             </header>

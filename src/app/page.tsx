@@ -1,7 +1,6 @@
 "use client";
 import { useAuth } from "@/hooks/useAuth";
 import { useRouter } from "next/navigation";
-import { Logo } from "@/components/Logo";
 import type { Route } from "next";
 
 export default function Home() {
@@ -10,11 +9,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      {/* Header com Logo */}
-      <header className="absolute top-0 w-full py-4 px-6 bg-white/80 backdrop-blur-sm shadow-md z-10">
-        <Logo />
-      </header>
-
       <div className="max-w-7xl mx-auto pt-24 pb-12 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
