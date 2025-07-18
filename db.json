@@ -1,0 +1,176 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Smartphone Galaxy S23 Ultra",
+      "price": 5499.99,
+      "originalPrice": 5999.99,
+      "discount": 8,
+      "description": "Smartphone Samsung Galaxy S23 Ultra 256GB, Câmera Tripla 200MP, S Pen, 5G, 12GB RAM, Android 13",
+      "category": "Celulares e Telefones",
+      "image": "/products/s23-ultra.jpg",
+      "rating": 4.8,
+      "reviews": 215,
+      "stock": 15,
+      "seller": "Samsung Oficial",
+      "freeShipping": true,
+      "specs": {
+        "storage": "256GB",
+        "screen": "6.8\" Dynamic AMOLED 2X",
+        "processor": "Snapdragon 8 Gen 2",
+        "battery": "5000mAh"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Notebook Dell Inspiron 15",
+      "price": 3899.9,
+      "originalPrice": 4299.9,
+      "discount": 9,
+      "description": "Notebook Dell Inspiron 15 3520, Intel Core i5-1135G7, 8GB RAM, SSD 512GB, 15.6\" Full HD, Windows 11",
+      "category": "Informática",
+      "image": "/products/dell-inspiron.jpg",
+      "rating": 4.6,
+      "reviews": 178,
+      "stock": 8,
+      "seller": "Dell Store",
+      "freeShipping": false,
+      "specs": {
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8GB DDR4",
+        "storage": "512GB SSD",
+        "screen": "15.6\" Full HD"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Smart TV LG 55\" 4K UHD",
+      "price": 2799.0,
+      "originalPrice": 3299.0,
+      "discount": 15,
+      "description": "Smart TV LG 55UQ8000 55\" 4K UHD, Processador α5 Gen5, AI ThinQ, HDR10, Google Assistant",
+      "category": "TV e Vídeo",
+      "image": "/products/lg-tv.jpg",
+      "rating": 4.7,
+      "reviews": 342,
+      "stock": 12,
+      "seller": "LG Eletronics",
+      "freeShipping": true,
+      "specs": {
+        "screen": "55\" 4K UHD",
+        "smart": "webOS 22",
+        "hdmi": "3 portas",
+        "hdr": "HDR10, HLG"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Fone de Ouvido Sony WH-1000XM5",
+      "price": 1899.9,
+      "description": "Fone de Ouvido Sem Fio Sony WH-1000XM5, Cancelamento de Ruído, Bluetooth, 30h de Bateria",
+      "category": "Áudio",
+      "image": "/products/sony-xm5.jpg",
+      "rating": 4.9,
+      "reviews": 421,
+      "stock": 25,
+      "seller": "Sony Store",
+      "freeShipping": true,
+      "specs": {
+        "bluetooth": "5.2",
+        "battery": "Até 30 horas",
+        "noiseCancel": "ANC Digital",
+        "weight": "250g"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Câmera Canon EOS R6 Mark II",
+      "price": 12999.99,
+      "description": "Câmera Mirrorless Canon EOS R6 Mark II, 24.2MP, Gravação 6K, Dual Pixel CMOS AF II",
+      "category": "Câmeras e Drones",
+      "image": "/products/canon-r6.jpg",
+      "rating": 4.8,
+      "reviews": 89,
+      "stock": 5,
+      "seller": "Canon Oficial",
+      "freeShipping": true,
+      "specs": {
+        "sensor": "24.2MP CMOS",
+        "video": "6K RAW",
+        "iso": "100-102400",
+        "stabilization": "5 eixos"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Console PlayStation 5",
+      "price": 3899.0,
+      "originalPrice": 4499.0,
+      "discount": 13,
+      "description": "Console PlayStation 5 + Controle DualSense + Horizon Forbidden West",
+      "category": "Games",
+      "image": "/products/ps5.jpg",
+      "rating": 4.9,
+      "reviews": 512,
+      "stock": 3,
+      "seller": "Sony Playstation",
+      "freeShipping": true,
+      "specs": {
+        "storage": "825GB SSD",
+        "resolution": "8K",
+        "fps": "Até 120fps",
+        "controller": "DualSense"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Apple Watch Series 8",
+      "price": 4299.0,
+      "description": "Apple Watch Series 8 GPS + Cellular 45mm, Pulseira Esportiva, Monitor de Saúde",
+      "category": "Smartwatches",
+      "image": "/products/apple-watch.jpg",
+      "rating": 4.7,
+      "reviews": 198,
+      "stock": 18,
+      "seller": "Apple Store",
+      "freeShipping": true,
+      "specs": {
+        "screen": "Retina LTPO OLED",
+        "battery": "18 horas",
+        "resistance": "50m",
+        "sensors": "ECG, Oxigênio"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Kindle Paperwhite 11ª Geração",
+      "price": 599.9,
+      "originalPrice": 699.9,
+      "discount": 14,
+      "description": "E-reader Kindle Paperwhite 11ª Geração, Tela 6.8\" 300ppi, À Prova D'água, 8GB",
+      "category": "Leitores Digitais",
+      "image": "/products/kindle.jpg",
+      "rating": 4.8,
+      "reviews": 276,
+      "stock": 30,
+      "seller": "Amazon",
+      "freeShipping": false,
+      "specs": {
+        "screen": "6.8\" 300ppi",
+        "battery": "Semanas de duração",
+        "storage": "8GB",
+        "waterproof": "IPX8"
+      }
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "Celulares e Telefones", "slug": "celulares" },
+    { "id": 2, "name": "Informática", "slug": "informatica" },
+    { "id": 3, "name": "TV e Vídeo", "slug": "tv-video" },
+    { "id": 4, "name": "Áudio", "slug": "audio" },
+    { "id": 5, "name": "Câmeras e Drones", "slug": "cameras" },
+    { "id": 6, "name": "Games", "slug": "games" },
+    { "id": 7, "name": "Smartwatches", "slug": "smartwatches" },
+    { "id": 8, "name": "Leitores Digitais", "slug": "leitores-digitais" }
+  ]
+}

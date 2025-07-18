@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   output: "standalone",
   compress: true,
   productionBrowserSourceMaps: true,
-  instrumentationHook: true,
 
   // Segurança
   poweredByHeader: false,

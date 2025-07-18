@@ -2,6 +2,7 @@
 import { useAuth } from "@/hooks/useAuth";
 import { useRouter } from "next/navigation";
 import type { Route } from "next";
+import Link from "next/link";
 
 export default function Home() {
   const { user } = useAuth();
@@ -59,12 +60,12 @@ export default function Home() {
                 >
                   Criar Conta Gratuita
                 </button>
-                <button
-                  onClick={() => router.push("/produtos" as Route)}
-                  className="px-8 py-4 bg-white text-indigo-600 border-2 border-indigo-600 text-lg font-medium rounded-lg shadow-lg hover:bg-indigo-50 transition-all"
+                <Link
+                  href={"/produtos" as Route}
+                  className="px-8 py-4 bg-indigo-600 text-white text-lg font-medium rounded-lg shadow-lg hover:bg-indigo-700 transition-all inline-block text-center"
                 >
                   Ver Catálogo
-                </button>
+                </Link>
               </div>
             )}
           </div>
